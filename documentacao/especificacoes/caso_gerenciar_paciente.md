@@ -38,12 +38,15 @@
 ## 4. Fluxos Alternativos (Exceções)
 
 ### 4.1 CPF Duplicado
-- Se, no fluxo de criação, o CPF informado já existir, o sistema deve exibir uma mensagem de erro informando que o CPF já está cadastrado.  
+- Se, no fluxo de criação, o CPF informado já existir, o sistema deve exibir uma mensagem de erro informando que o CPF já está cadastrado.
 
-### 4.2 Dados Inválidos
+### 4.2 CNS Duplicado
+- Se, no fluxo de criação, o CNS (cartão Sus) informado já existir, o sistema deve exibir uma mensagem de erro informando que o CNS já está cadastrado.
+
+### 4.3 Dados Inválidos
 - Se qualquer campo obrigatório não for preenchido, o sistema deve indicar quais campos precisam de atenção antes de salvar.  
 
-### 4.3 Cancelamento
+### 4.4 Cancelamento
 - A qualquer momento, o ator pode clicar em **"Cancelar"** e a operação será interrompida, retornando à tela anterior sem salvar alterações.  
 
 ## 5. Pós-condições
