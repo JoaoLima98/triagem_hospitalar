@@ -52,3 +52,10 @@ O sistema trará benefícios, como:
 - Dados do paciente mantidos para futuras consultas.  
 
 Atualmente, cada atendimento exige a criação manual de uma ficha do zero, processo que será eliminado pelo novo sistema.
+
+---
+
+## Diagrama de Casos de Uso
+
+<img width="1286" height="1490" alt="Diagrama_caso_de_uso_Triagem_Hospitalar" src="https://github.com/user-attachments/assets/14f9cd76-919e-4977-a59b-b0e8119fd394" />
+
