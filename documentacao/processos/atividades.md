@@ -1,4 +1,3 @@
-
 # Atividades do Processo de Software: Sistema de Triagem Hospitalar
 
 Este documento detalha o fluxo de trabalho do processo de software, definindo o propósito e as ações primárias de cada atividade no desenvolvimento do **Sistema de Triagem Hospitalar**.
@@ -13,13 +12,13 @@ A atividade **Analisar o Fluxo de Atendimento** é o ponto de partida. Seu objet
 
 ### Responsável Principal
 
-**[Analista de Negócio (AN)]()**.
+**[Analista de Negócio (AN)](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md)**.
 
 ### Fluxo de Artefatos
 
 **Entradas:** Diagrama de Caso de Uso, Necessidades para o fluxo de Triagem, Diagnóstico e Prescrição, Requisitos de conformidade (LGPD, Segurança do Paciente).
 
-**Saídas:** Escopo do Sistema Detalhado, Requisitos de Alto Nível, **[Documento de Visão]()**.
+**Saídas:** Escopo do Sistema Detalhado, Requisitos de Alto Nível, **[Documento de Visão](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/documento_visao.md)**.
 ### Principais Tarefas
 
 1.  **Levantamento de Requisitos:** Analisar ficha de triagem atualmente utilizada em papel, e entender atual fluxo de funciononamento do hospital, para detalhar cada funcionalidade do diagrama (`Gerenciar Paciente`, `Fazer Triagem`, etc.).
@@ -28,7 +27,7 @@ A atividade **Analisar o Fluxo de Atendimento** é o ponto de partida. Seu objet
     
 3.  **Definição de Escopo:** Formalizar os limites do projeto com base no diagrama. **Escopo Incluído:** `Gerenciar Paciente`, `Fazer Triagem`, `Verificar Prontuário`, `Receber Triagem`, `Diagnosticar Paciente`, `Prescrever Medicamento` e `Gerenciar Estoque`. **Escopo Excluído:** Quaisquer outras funcionalidades, como faturamento, agendamento, ou gestão de leitos.
     
-4.  **Documentação da Visão:** Criar o **[Documento de Visão]()** que formaliza os objetivos e o escopo do Sistema de Triagem Hospitalar.
+4.  **Documentação da Visão:** Criar o **[Documento de Visão](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/documento_visao.md)** que formaliza os objetivos e o escopo do Sistema de Triagem Hospitalar.
 
 ---
 ## 2. Especificar Funcionalidades
@@ -39,13 +38,13 @@ A atividade **Especificar** transforma os casos de uso do diagrama em **requisit
 
 ### Responsável Principal
 
-**[Analista de Req/Q]()**.
+**[Analista de Req/Q](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md)**.
 
 ### Fluxo de Artefatos
 
-**Entradas**: **[Documento de Visão]()**, Diagrama de Caso de Uso.
+**Entradas**: **[Documento de Visão](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/documento_visao.md)**, Diagrama de Caso de Uso.
 
-**Saídas**: **[Especificação de Casos de uso]()**
+**Saídas**: **[Especificação de Casos de uso](https://github.com/JoaoLima98/triagem_hospitalar/tree/main/documentacao/especificacoes)**
 
 ### Principais Tarefas
 
@@ -60,15 +59,15 @@ A atividade **Especificar** transforma os casos de uso do diagrama em **requisit
 
 ### Propósito
 
-A atividade **Codificar** é a implementação técnica do Sistema de Triagem. O objetivo é transformar as especificações em um **[Produto](l)** funcional, seguro e confiável, que suporte o fluxo de atendimento definido no escopo.
+A atividade **Codificar** é a implementação técnica do Sistema de Triagem. O objetivo é transformar as especificações em um **[Produto]()** funcional, seguro e confiável, que suporte o fluxo de atendimento definido no escopo.
 
 ### Responsável Principal
 
-**[Desenvolvedor]()**.
+**[Desenvolvedor](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md)**.
 
 ### Fluxo de Artefatos
 
-**Entradas:** [Especificações de Casos de Uso]() detalhadas com Critérios de Aceitação.
+**Entradas:** [Especificações de Casos de Uso](https://github.com/JoaoLima98/triagem_hospitalar/tree/main/documentacao/especificacoes) detalhadas com Critérios de Aceitação.
 **Saídas:**  [Produto](), Código-fonte, Testes Unitários Aprovados.
 
 ### Principais Tarefas
