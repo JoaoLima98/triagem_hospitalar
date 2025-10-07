@@ -2,7 +2,7 @@
 
 Este documento detalha o fluxo de trabalho do processo de software, definindo o propósito e as ações primárias de cada atividade no desenvolvimento do **Sistema de Triagem Hospitalar**.
 
-----------
+---------
 
 ## 1. Analisar o Fluxo de Atendimento
 
