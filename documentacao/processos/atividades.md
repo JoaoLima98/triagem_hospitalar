@@ -1,3 +1,4 @@
+
 # Atividades do Processo de Software: Sistema de Triagem Hospitalar
 
 Este documento detalha o fluxo de trabalho do processo de software, definindo o propósito e as ações primárias de cada atividade no desenvolvimento do **Sistema de Triagem Hospitalar**.
@@ -63,7 +64,7 @@ A atividade **Codificar** é a implementação técnica do Sistema de Triagem. O
 
 ### Responsável Principal
 
-**[Desenvolvedor](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md)**.
+**[Analista de Req/Q](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md)**.
 
 ### Fluxo de Artefatos
 
@@ -77,4 +78,25 @@ A atividade **Codificar** é a implementação técnica do Sistema de Triagem. O
 2.  **Escrita do Código:** Implementar a lógica de cada funcionalidade do sistema.
     
 3.  **Integração Contínua:** Unir o código das diferentes funcionalidades, garantindo que a **Triagem** registrada pela **Enfermeira** seja corretamente exibida para o **Médico** que irá **Verificar o Prontuário**.
+   
+---
+## 4. Construir Documento de requisitos
+
+### Propósito
+
+A atividade **Construir o documento de requisitos** é gerar um documento visível do funcionamento e dos atores do Sistema de Triagem. O objetivo é retirar o sistema do campo das ideias e transformar em um **[Produto]()** visual que sirva como guia para a equipe.
+
+### Responsável Principal
+
+**[Desenvolvedor](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md)**.
+
+### Fluxo de Artefatos
+
+**Entradas:** [Especificações de Casos de Uso](https://github.com/JoaoLima98/triagem_hospitalar/tree/main/documentacao/especificacoes), [Documento de Visão](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/documento_visao.md)
+**Saídas:**  [Documento de Requisitos](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/Documento%20de%20Requisitos%20-%20Sistema%20de%20Fluxo%20Hospitalar.pdf), incluindo Minimundo, EAP, Propósito, Requisitos Funcionais, Requisitos não funcionais e Regras de negócios.
+
+### Principais Tarefas
+
+1.  **Construção**: Construir o documento preenchendo com base no modelo template exigido.
+2.   
    
