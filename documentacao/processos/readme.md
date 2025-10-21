@@ -28,5 +28,5 @@ Padrão para criar os Artefatos de Requisitos - Os artefatos de requisitos dever
     A estrutura de diretórios que armazenará esses artefatos de requisitos criados e mantidos no diretório Requisitos, deverá seguir esta classificação primária : (a) para as necessidades do domínio do problema, os artefatos de requisitos deverão ser organizados no diretório Requisitos Funcionais; (b) para os documentos que descrevem a especificação de cada caso de uso devem ficar no diretório "especificacoes"; para os documentos que dizem respeito ao proceso devem estar presente no diretório "processos".
 
     Padrão de nomenclatura
-        Todos os arquivos arquivos utilizando os caractéres em minusculo e sempre separados por underline (_), com o nome que descreve sua função, exemplo: caso_fazer_triagem.md
-        Os arquivos de especificações de determinado caso de uso começam com "caso" seguido do caso que ele descreve, exemplo: caso_gerenciar_paciente.md
+        Todos os arquivos arquivos utilizando os caractéres em minusculo e sempre separados por hífens (-), com o nome que descreve sua função, exemplo: caso-fazer-triagem.md
+        Os arquivos de especificações de determinado caso de uso começam com "caso" seguido do caso que ele descreve, exemplo: caso-gerenciar-paciente.md
