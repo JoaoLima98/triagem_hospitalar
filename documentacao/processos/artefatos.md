@@ -90,3 +90,16 @@ Disponível em: [**Documento de Requisitos - Modelo de Template**](https://docs.
 O Produto é o artefato final e tangível de todo o processo. Representa o software funcional, testado e pronto para ser entregue aos usuários ou disponibilizado em um ambiente de produção/teste. É a manifestação concreta das Histórias de Usuário implementadas.
 
 ### Template
+
+
+## 5. Plano de Testes
+
+O documento que visa definir os testes do software a fim de manter a qualidade do sistema.
+
+### Template
+
+Este documento deve responder as seguintes perguntas, voltados para os testes:
+- Qual o objetivo?
+- Qual a estratégia?
+- Quais as técnicas?
+- Quais indicadores?
