@@ -50,4 +50,4 @@
 Desenhar a Experiência e Interface: Construir e Validar o design visando garantir a usabilidade do sistema.
 
 1. **Entrada Principal** : [Especificações de Casos de Uso](https://github.com/JoaoLima98/triagem_hospitalar/tree/main/documentacao/especificacoes/caso-de-uso) 
-2. **Saída Principal** : [Protótipos](artefatos.md#6-prototipos)  
+2. **Saída Principal** : [Produto (Software Executável)](artefatos.md#3-produto-software-executável) 
