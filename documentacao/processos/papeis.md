@@ -24,8 +24,8 @@
 
 * [Especificar Funcionalidades](atividades.md#2-especificar-funcionalidades): Transformar as funcionalidades de alto nível em requisitos detalhados e testáveis, para isso, o analista deverá criar e manter critérios de aceitação.
     1. **Entrada Principal** : [Documento de Visão](artefatos.md#1-documento-de-visão)   
-    2. **Saídas Principais** : [Especificações de Casos de Uso](https://github.com/JoaoLima98/triagem_hospitalar/tree/main/documentacao/especificacoes/caso-de-uso)
-                               [Plano de Testes](artefatos.md#5-plano-de-testes) 
+    2. **Saídas Principais** : | [Especificações de Casos de Uso](https://github.com/JoaoLima98/triagem_hospitalar/tree/main/documentacao/especificacoes/caso-de-uso)
+                               | [Plano de Testes](artefatos.md#5-plano-de-testes) 
 
 ## Desenvolvedor  
 
