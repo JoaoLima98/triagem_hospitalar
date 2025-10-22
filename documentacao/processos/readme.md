@@ -3,9 +3,10 @@ Definição de Padrões e Processo de Desenvolvimento de Software
 Processo
 
 Papeis
-- Analista de Negócio : Responsável por entender as necessidades do hospital para transpassar para o sistema, sem perder a essência do processo atual da instituição, e ajudar na criação da documentação.
-- Analista de Req/Q : Responsável por detalhar, documentar e gerenciar os artefatos de requisitos, garantindo a qualidade do produto.
-- Desenvolvedor : Responsável por projetar e construir o software, transformando os artefatos de requisitos detalhados em código funcional.
+- [Analista de Negócio](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md#analista-de-neg%C3%B3cio-an) : Responsável por entender as necessidades do hospital para transpassar para o sistema, sem perder a essência do processo atual da instituição, e ajudar na criação da documentação.
+- [Analista de QA](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md#analista-de-qa-quality-assurance) : Responsável por garantir que o produto final esteja livre de defeitos e atenda à visão inicial.
+- [Desenvolvedor](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md#desenvolvedor) : Responsável por projetar e construir o software, transformando os artefatos de requisitos detalhados em código funcional.
+- [Profissional UX](https://github.com/JoaoLima98/triagem_hospitalar/blob/main/documentacao/processos/papeis.md#analista-de-neg%C3%B3cio-an): Responsável por planejar e melhorar a experiência do usuário ao interagir com o produto final.
 
 Artefatos
 - Documento de Visão : Artefato responsável por compreender uma visão geral do produto que está sendo desenvolvido.
@@ -14,9 +15,10 @@ Artefatos
 
 Atividades
 - Analisar Negócio : Entender o contexto, objetivos, problemas e oportunidades que necessitam o hospital. Resulta na definição de escopo e em uma visão geral de cada funcionalidade.
-- Especificar : Detalhar as funcionalidades de alto nível em Histórias de Usuário claras e testáveis.
-- Codificar : Escrever, testar unitariamente e integrar o código-fonte para implementar as funcionalidades definidas nas Histórias de Usuário.
+- Especificar Funcionalidades: Detalhar as funcionalidades de alto nível em Histórias de Usuário claras e testáveis.
+- Codificar e Testar Unitariamente: Escrever, testar unitariamente e integrar o código-fonte para implementar as funcionalidades definidas nas Histórias de Usuário.
 Padrões Estabelecidos para o Desenvolvimento
+- Construir Documento de requisitos: Gerar um documento visível do funcionamento e dos atores do Sistema de Triagem.
 
 Padrão de Diretórios - Artefatos só podem ser criados dentro dessa estrutura estabelecida.
 
