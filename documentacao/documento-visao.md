@@ -18,7 +18,7 @@ O sistema trará benefícios, como:
     - Controle de estoque: entrada e saída de medicamentos.
 
 - **Fora do Escopo:**
-    - Portal do Paciente, Gestão de Internação, Integração com Laboratório/Radiologia, Acompanhamento/Controle Cirúrgico.
+    - Portal do Paciente, Gestão de Internação/Leitos, Integração com Laboratório/Radiologia, Acompanhamento/Controle Cirúrgico.
 
 ## 3. Diagrama de caso de uso
  2. **Saída Principal** : 
