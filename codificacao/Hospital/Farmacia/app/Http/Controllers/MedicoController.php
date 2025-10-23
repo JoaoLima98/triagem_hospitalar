@@ -37,7 +37,7 @@ class MedicoController extends Controller
     public function marcarPrescricaoAtendida(int $id){
         $prescricao = Prescricao::find($id);
         if($prescricao){
-            $prescricao->prescricao_atendida = true;
+            $prescricao->update(['prescricao_atendida' => true]);
             
             $idRemedios = PrescricaoRemedio::where('id_prescricao',$prescricao->id)->get();
             try {
@@ -64,7 +64,6 @@ class MedicoController extends Controller
                 return back()->with('error', 'Erro ao atualizar estoque: '.$e->getMessage());
             }
             
-            $prescricao->save();
             return back()->with('success', 'Prescrição marcada como atendida.');
         }
         return back()->with('error', 'Prescrição não encontrada.');

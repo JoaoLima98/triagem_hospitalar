@@ -768,40 +768,7 @@
             
             <div class="nav-items">
                 @yield('nav')
-                {{--  
-                <a href="" class="nav-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
-                    <i class="fas fa-tachometer-alt"></i>
-                    Dashboard
-                </a>
-                <a href="" class="nav-item {{ request()->routeIs('patients.*') ? 'active' : '' }}">
-                    <i class="fas fa-user-injured"></i>
-                    Pacientes
-                </a>
-                <a href="" class="nav-item {{ request()->routeIs('doctors.*') ? 'active' : '' }}">
-                    <i class="fas fa-user-md"></i>
-                    Médicos
-                </a>
-                <a href=" class="nav-item {{ request()->routeIs('appointments.*') ? 'active' : '' }}">
-                    <i class="fas fa-calendar-check"></i>
-                    Consultas
-                </a>
-                <a href=" class="nav-item {{ request()->routeIs('beds.*') ? 'active' : '' }}">
-                    <i class="fas fa-bed"></i>
-                    Leitos
-                </a>
-                <a href="" class="nav-item {{ request()->routeIs('pharmacy.*') ? 'active' : '' }}">
-                    <i class="fas fa-pills"></i>
-                    Farmácia
-                </a>
-                <a href="" class="nav-item {{ request()->routeIs('reports.*') ? 'active' : '' }}">
-                    <i class="fas fa-chart-bar"></i>
-                    Relatórios
-                </a>
-                <a href="" class="nav-item {{ request()->routeIs('settings.*') ? 'active' : '' }}">
-                    <i class="fas fa-cog"></i>
-                    Configurações
-                </a>
-                --}}
+                
             </div>
         </nav>
         <!-- Flash Messages -->
