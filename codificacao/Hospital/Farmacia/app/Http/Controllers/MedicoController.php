@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 
 class MedicoController extends Controller
 {
+
     public function index(){
         $pacientes = Paciente::all();
         $remedios = Remedio::all();
@@ -34,38 +35,39 @@ class MedicoController extends Controller
         return back()->with('success', 'Prescrição criada com sucesso ! GUIA: '.$prescricao->id);
         
     }
-    public function marcarPrescricaoAtendida(int $id){
+    public function marcarPrescricaoAtendida(int $id)
+    {
         $prescricao = Prescricao::find($id);
-        if($prescricao){
-            $prescricao->update(['prescricao_atendida' => true]);
-            
-            $idRemedios = PrescricaoRemedio::where('id_prescricao',$prescricao->id)->get();
-            try {
-                #essa validacao ae vai verificar se tem tds os remedios, se sim, entrega, se nao, n entrega e fds
-                foreach ($idRemedios as $remedioPrescrito) {
-                    $qtd = $remedioPrescrito->quantidade ?? 1;
-                    $estoque = Estoque::where('id_remedio', $remedioPrescrito->id_remedio)->first();
-
-                    if (!$estoque || $estoque->quantidade < $qtd) {
-                        return back()->with('error', 'Estoque insuficiente para o remédio ID '.$remedioPrescrito->id_remedio);
-                    }
-                }
-
-                foreach ($idRemedios as $remedioPrescrito) {
-                    $qtd = $remedioPrescrito->quantidade ?? 1;
-
-                    Estoque::where('id_remedio', $remedioPrescrito->id_remedio)
-                        ->decrement('quantidade', $qtd);
-                }
-
-                return back()->with('success', 'Prescrição atendida com sucesso!');
-                
-            } catch (\Exception $e) {
-                return back()->with('error', 'Erro ao atualizar estoque: '.$e->getMessage());
-            }
-            
-            return back()->with('success', 'Prescrição marcada como atendida.');
+        if(!$prescricao){
+            return back()->with('error', 'Prescrição não encontrada.');
         }
-        return back()->with('error', 'Prescrição não encontrada.');
+
+        $idRemedios = PrescricaoRemedio::where('id_prescricao', $prescricao->id)->get();
+
+        // Checa estoque antes de atualizar prescrição
+        foreach ($idRemedios as $remedioPrescrito) {
+            $qtd = $remedioPrescrito->quantidade ?? 1;
+            $estoque = Estoque::where('id_remedio', $remedioPrescrito->id_remedio)->first();
+
+            if (!$estoque || $estoque->quantidade < $qtd) {
+                return back()->with('error', 'Estoque insuficiente para o remédio ID '.$remedioPrescrito->id_remedio);
+            }
+        }
+
+        // Decrementa o estoque
+        foreach ($idRemedios as $remedioPrescrito) {
+            $qtd = $remedioPrescrito->quantidade ?? 1;
+            Estoque::where('id_remedio', $remedioPrescrito->id_remedio)
+                ->decrement('quantidade', $qtd);
+        }
+
+        // Marca a prescrição como atendida
+        $prescricao->update(['prescricao_atendida' => true]);
+
+        return back()->with('success', 'Prescrição atendida com sucesso!');
     }
+
+
+    
+
 }

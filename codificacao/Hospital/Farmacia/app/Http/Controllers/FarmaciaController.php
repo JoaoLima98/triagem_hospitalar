@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Estoque;
 use App\Models\Paciente;
 use App\Models\Prescricao;
+use App\Models\Remedio;
 use Illuminate\Http\Request;
 
 class FarmaciaController extends Controller
-{
+{   
+    
     public function index(){
         $pacientes = Paciente::all();
         return view('Farmacia.indexFarmacia',compact('pacientes'));
@@ -57,5 +59,27 @@ class FarmaciaController extends Controller
     public function consultarEstoque(){
         $estoques = Estoque::with('remedio')->get();
         return view('Farmacia.checarEstoque',compact('estoques'));
+    }
+
+    public function criarLote(){
+        $remedios = Remedio::all();
+        return view('Estoque.criarLote',compact('remedios'));
+    }
+    public function storeLote(Request $request){
+        
+        $codigos = [];
+
+        for ($i = 0; $i < 4; $i++) {
+            $numero = str_pad(rand(1, 999), 3, '0', STR_PAD_LEFT); 
+            $codigos[] = 'L' . $numero;
+        }
+        
+        Estoque::create([
+            'id_remedio' => $request->input('id_remedio'),
+            'quantidade' => $request->input('quantidade'),
+            'lote'       => $codigos[0],
+        ]);
+        
+        return redirect()->route('consultar.estoque')->with('success', 'Lote criado com sucesso.');
     }
 }

@@ -4,16 +4,7 @@
 
 @section('nav')
 {{-- Seus links de navegação aqui --}}
-<a href="{{ url('/medico') }}" class="nav-item"><i class="fas fa-tachometer-alt"></i>Fazer prescrição (médico)</a>
-
-<a href="{{-- route('patients.index') --}}" class="nav-item {{ request()->routeIs('patients.*') ? 'active' : '' }}">
-    <i class="fas fa-user-injured"></i> Pacientes
-</a>
-<a href="{{ route('painel.guias') }}" class="nav-item"><i class="fas fa-calendar-check"></i> Consultar Guia</a>
-
-<a href="{{ route('farmacia') }}" class="nav-item"><i class="fas fa-pills"></i> Entregar Medicamentos</a>
-
-
+<a href="{{ url('/medico') }}" class="nav-item"><i class="fas fa-tachometer-alt"></i>Fazer prescrição</a>
 @endsection
 
 @section('content')
@@ -81,7 +72,7 @@
 
     $(document).ready(function() {
         $('#paciente').select2({
-            placeholder: "Digite o CPF ou nome do paciente...",
+            
             allowClear: true
         });
     });
